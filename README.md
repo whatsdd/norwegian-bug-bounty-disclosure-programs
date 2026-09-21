@@ -8,10 +8,6 @@ Vet du om et program som mangler? Se [Bidra](#bidra--contributing) under, eller 
 
 Know of a program that's missing? See [Contributing](#bidra--contributing) below, or edit [`programs.yaml`](programs.yaml) directly and send a pull request.
 
-**Forslag til nytt repo-navn / Suggested repo rename:** listen dekker langt mer enn bug bounty nå: VDP, RDP og rene `security.txt`-kontakter. Et navn som **`norwegian-disclosure-programs`** ville dekket alt dette bedre enn `norske-bug-bounty-program`. GitHub viderekobler gamle lenker automatisk etter et navnebytte.
-
-The list now covers far more than bug bounty: VDP, RDP, and bare `security.txt` contacts. A name like **`norwegian-disclosure-programs`** would describe that better than `norske-bug-bounty-program`. GitHub auto-redirects old links after a rename.
-
 <!-- programs:start -->
 **57 aktive program / active programs · 5 offentlige bug bounty-program med pengedusør / public bug bounty programs with a cash reward**
 
