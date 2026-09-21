@@ -5,7 +5,7 @@
 >
 > **NO —** En oversikt over norske (eller Norge-baserte) virksomheter som har et bug bounty-program, sårbarhetsrapporterings­program (VDP), ansvarlig rapporterings­policy (RDP), eller som minst publiserer en `security.txt`. Pull requests mottas med takk — se [Bidra](#contributing--bidra).
 
-**Repo rename / Endring av repo-navn:** This list has outgrown the name `norske-bug-bounty-program`. We suggest renaming the repo to **`norwegian-disclosure-programs`** — it covers bug bounty *and* VDP/RDP *and* `security.txt`-only entries. Old links keep working after a GitHub rename. / Vi foreslår å endre navn på repoet til **`norwegian-disclosure-programs`** — det dekker både bug bounty, VDP/RDP og rene `security.txt`-oppføringer.
+**Repo rename / Endring av repo-navn:** This list has outgrown the orginal concept `norske-bug-bounty-program`. Now renaming the repo to **`norwegian-disclosure-programs`** — as it covers bug bounty *and* VDP/RDP *and* `security.txt`-only entries. Old links keep working after a GitHub rename. / Endret navn på repoet til **`norwegian-disclosure-programs`** slik det dekker både bug bounty, VDP/RDP og rene `security.txt`-oppføringer.
 
 Legend / Tegnforklaring: 💰 Cash bounty / Pengebelønning · 👕 Swag · 🏆 Hall of Fame / Takkeliste · 🙏 Thanks only / Kun takk · 🔐 PGP key offered / PGP-nøkkel · 🛡️ Safe harbor language / Trygg-havn-klausul
 
