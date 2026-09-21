@@ -1,0 +1,557 @@
+# Kilde for tabellen i README.md. Ikke rediger tabellen direkte – den
+# genereres automatisk fra denne filen. Se CONTRIBUTING.md.
+#
+# Source for the table in README.md. Do not edit the table directly – it is
+# generated from this file. See CONTRIBUTING.md.
+#
+# Felt / fields:
+#   name        Firmanavn. Utelat for hemmelige program.
+#               Company name. Omit for undisclosed programs.
+#   url         Firmaets nettside. / Company website.
+#   unit        Valgfritt. Datterselskap/merkevare, f.eks. FINN.no under Vend.
+#               Optional. Subsidiary/brand, e.g. FINN.no under Vend.
+#   unit_url    Valgfritt. / Optional.
+#   platform    hackerone | intigriti | bugcrowd | yeswehack | synack | openbugbounty | none
+#               none = eget program uten plattform. Mangler en plattform? Legg den til i scripts/render.py.
+#               none = self-hosted, no platform. Missing a platform? Add it to scripts/render.py.
+#   visibility  public | private-known | undisclosed
+#               private-known = privat, men eksistensen er offentlig kjent
+#               private-known = private, but publicly known to exist
+#   type        bug-bounty | rdp | vdp | contact-only
+#               contact-only = ingen policyside, bare en security.txt eller sikkerhetskontakt.
+#               contact-only = no policy page, just a security.txt or a security contact.
+#   program_url Valgfritt. Lenke til programmet. / Optional. Link to the program.
+#   rewards     Liste av / list of: money | hall-of-fame | swag. Tom liste = ingen dusør. / Empty list = no reward.
+#   launched    Valgfritt. ÅÅÅÅ eller ÅÅÅÅ-MM, eller "<= ÅÅÅÅ" hvis bare en øvre grense er kjent.
+#               Optional. YYYY or YYYY-MM, or "<= YYYY" if only an upper bound is known.
+#   source      Valgfritt. Lenke som dokumenterer programmet. / Optional. Link documenting the program.
+#   source_name Valgfritt. Visningsnavn for kilden. / Optional. Display name for the source.
+#   security_txt Valgfritt. Lenke til selskapets security.txt. / Optional. Link to the company's security.txt.
+#   comment     Valgfritt. Kort fritekstnotat, f.eks. forbehold eller kontekst.
+#               Optional. Short free-text note, e.g. a caveat or context.
+#   status      Valgfritt. active (standard) | unknown | closed
+#               Optional. active (default) | unknown | closed
+
+- name: Ardoq
+  url: https://ardoq.com
+  platform: hackerone
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  launched: "<= 2022"
+  source: https://www.ardoq.com/blog/bug-bounty-hackerone
+  source_name: Ardoq
+
+- name: Firi
+  url: https://firi.com
+  platform: hackerone
+  visibility: private-known
+  type: bug-bounty
+  program_url: https://hackerone.com/firi_as
+  rewards: [money]
+  security_txt: https://firi.com/.well-known/security.txt
+  launched: 2024-10
+  source: https://firi.com/.well-known/security.txt
+  source_name: Firi
+
+- name: Horde
+  url: https://horde.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://horde.no/responsible-disclosure/
+  rewards: [hall-of-fame]
+  security_txt: https://horde.no/.well-known/security.txt
+
+- name: Jobreg
+  url: https://jobreg.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.jobreg.no/security.php
+  rewards: [hall-of-fame]
+
+- name: Kahoot
+  url: https://kahoot.com
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://kahoot.com/.well-known/security.txt
+  source: https://intigriti.com/companies
+  source_name: Intigriti
+
+- name: Kahoot
+  url: https://kahoot.com
+  platform: none
+  visibility: public
+  type: vdp
+  program_url: https://kahoot.com/disclosure-policy.txt
+  rewards: []
+  security_txt: https://kahoot.com/.well-known/security.txt
+
+- name: Kahoot
+  url: https://kahoot.com
+  unit: Motimate
+  unit_url: https://motimateapp.com
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://motimateapp.com/.well-known/security.txt
+  source: https://business.facebook.com/motimateapp/photos/a.1702293843419477/3049907031991478/
+  source_name: Facebook
+
+- name: Morgenbladet
+  url: https://morgenbladet.no
+  platform: none
+  visibility: public
+  type: bug-bounty
+  program_url: https://www.morgenbladet.no/kontakt-oss
+  rewards: [money]
+
+- name: NBX
+  url: https://nbx.com
+  platform: openbugbounty
+  visibility: public
+  type: bug-bounty
+  program_url: https://openbugbounty.org/bugbounty/nbxsec/
+  rewards: [money, hall-of-fame]
+  security_txt: https://app.nbx.com/.well-known/security.txt
+  source: https://nbx.com/en/security
+  source_name: NBX
+
+- name: NRK
+  url: https://nrk.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://info.nrk.no/responsible-disclosure-policy/
+  rewards: [hall-of-fame]
+  security_txt: https://nrk.no/.well-known/security.txt
+
+- name: Oda
+  url: https://oda.com
+  platform: yeswehack
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://oda.com/.well-known/security.txt
+  launched: 2022-04
+  source: https://oda.com/.well-known/security.txt
+  source_name: security.txt
+
+- name: Schibsted
+  url: https://schibsted.com
+  platform: bugcrowd
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://schibsted.com/.well-known/security.txt
+  source: https://vg.no/.well-known/security.txt
+  source_name: security.txt
+  comment: Dekker flere Schibsted-merkevarer, bl.a. Aftenposten og VG. / Covers several Schibsted brands, incl. Aftenposten and VG.
+
+- name: Signicat
+  url: https://www.signicat.com
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://www.signicat.com/.well-known/security.txt
+  source: https://app.intigriti.com/programs/signicat/signicatresponsibledisclosure/detail
+  source_name: Intigriti
+
+- name: Signicat
+  url: https://www.signicat.com
+  platform: intigriti
+  visibility: public
+  type: vdp
+  program_url: https://app.intigriti.com/programs/signicat/signicatresponsibledisclosure/detail
+  rewards: [hall-of-fame]
+  security_txt: https://www.signicat.com/.well-known/security.txt
+
+- name: Sparebank 1
+  url: https://sparebank1.no/
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://www.sparebank1.no/.well-known/security.txt
+  launched: 2021-11
+  source: https://www.kode24.no/artikkel/slik-blir-du-dusorjeger-for-sparebank-1/76160552
+  source_name: kode24
+
+- name: Storebrand
+  url: https://www.storebrand.no
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://www.storebrand.no/.well-known/security.txt
+  launched: 2025-02
+  source: https://www.bankshift.no/teknologi/storebrand-apne-om-angrep-i-egne-systemer-noen-hadde-tatt-over-koden-som-andre-hadde-laget/457471
+  source_name: BankShift
+
+- name: Storebrand
+  url: https://www.storebrand.no
+  platform: intigriti
+  visibility: public
+  type: vdp
+  program_url: https://app.intigriti.com/programs/spp-storebrand/storebrand-rd/detail
+  rewards: []
+  security_txt: https://www.storebrand.no/.well-known/security.txt
+  launched: 2026-01
+
+- name: Vend
+  url: https://vend.com
+  unit: FINN.no
+  unit_url: https://finn.no
+  platform: hackerone
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  security_txt: https://finn.no/.well-known/security.txt
+  launched: 2019-09
+  source: https://medium.com/finn-no/one-year-with-a-private-bug-bounty-program-f928a57ad026
+  source_name: Medium
+  comment: Tidligere del av Schibsted/Adevinta, nå eget selskap. / Formerly part of Schibsted/Adevinta, now a separate company.
+
+- name: Vipps
+  url: https://vipps.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://vipps.no/sikkerhet/responsible-disclosure-policy/
+  rewards: [hall-of-fame]
+  security_txt: https://vipps.no/.well-known/security.txt
+
+- name: Visma
+  url: https://visma.no
+  platform: intigriti
+  visibility: private-known
+  type: bug-bounty
+  rewards: [money]
+  source: https://web.archive.org/web/20221203065247/https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/
+  source_name: Visma via Wayback Machine
+
+- name: Visma
+  url: https://visma.no
+  platform: intigriti
+  visibility: public
+  type: bug-bounty
+  program_url: https://app.intigriti.com/researcher/programs/visma/visma
+  rewards: [money]
+  source: https://www.visma.com/trust-centre/responsible-disclosure
+  source_name: Visma
+
+- name: Visma
+  url: https://visma.no
+  platform: intigriti
+  visibility: public
+  type: vdp
+  program_url: https://app.intigriti.com/researcher/programs/visma/VismaResponsibleDisclosure
+  rewards: [swag, hall-of-fame]
+  source: https://www.visma.com/trust-centre/responsible-disclosure
+  source_name: Visma
+
+- name: BankID Norge
+  url: https://www.bankid.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: [hall-of-fame]
+  security_txt: https://bankid.no/.well-known/security.txt
+  comment: Ingen egen policyside funnet, bare security.txt. / No dedicated policy page found, only security.txt.
+
+- name: Cognite
+  url: https://www.cognite.com
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://docs.cognite.com/cdf/trust/vulnerability-disclosure-policy
+  rewards: []
+  security_txt: https://www.cognite.com/.well-known/security.txt
+
+- name: Digdir
+  url: https://www.digdir.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.digdir.no/digdir/responsible-disclosure-policy/6386
+  rewards: [hall-of-fame]
+
+- name: Equinor
+  url: https://www.equinor.com
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.equinor.com/about-us/csirt
+  rewards: []
+  security_txt: https://www.equinor.com/.well-known/security.txt
+
+- name: Euronext Securities Oslo
+  url: https://www.euronextvps.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.euronext.com/en/post-trade/euronext-securities/oslo/about-us/vulnerability-reporting
+  rewards: []
+  comment: Tidligere Verdipapirsentralen, forkortet VPS. / Formerly Verdipapirsentralen, abbreviated VPS.
+
+- name: Gjensidige
+  url: https://www.gjensidige.no
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/gjensidige
+  rewards: [hall-of-fame]
+
+- name: Kongsberg Gruppen
+  url: https://www.kongsberg.com
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.kongsberg.com/.well-known/security.txt
+
+- name: Nordea
+  url: https://www.nordea.com
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/nordea
+  rewards: [hall-of-fame]
+  comment: Nordisk konsern, dekker også norsk virksomhet. / Nordic group, also covers Norwegian operations.
+
+- name: Norsk Helsenett
+  url: https://www.nhn.no
+  unit: Helsenorge
+  unit_url: https://www.helsenorge.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.nhn.no/.well-known/vulnerability-disclosure.html
+  rewards: [hall-of-fame]
+  security_txt: https://www.nhn.no/.well-known/security.txt
+
+- name: Norsk Hydro
+  url: https://www.hydro.com
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/norskhydroasa
+  rewards: [hall-of-fame]
+
+- name: NorgesGruppen
+  url: https://www.norgesgruppen.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.norgesgruppen.no/cybersikkerhet/
+  rewards: []
+
+- name: Northern.tech
+  url: https://northern.tech
+  platform: hackerone
+  visibility: private-known
+  type: bug-bounty
+  program_url: https://hackerone.com/northerntechhq
+  rewards: [money]
+  launched: 2021
+  source: https://northern.tech/blog/
+  source_name: Northern.tech
+
+- name: NBIM
+  url: https://www.nbim.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.nbim.no/en/responsible-disclosure-policy/
+  rewards: [hall-of-fame]
+  comment: Forvalter Statens pensjonsfond utland, kjent som Oljefondet. / Manages the Government Pension Fund Global, known as the Oil Fund.
+
+- name: Infront
+  url: https://oslomarketsolutions.no
+  unit: Oslo Market Solutions
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://oslomarketsolutions.no/en/responsibledisclosure/
+  rewards: []
+
+- name: Opera Software
+  url: https://www.opera.com
+  platform: bugcrowd
+  visibility: public
+  type: bug-bounty
+  program_url: https://bugcrowd.com/opera
+  rewards: [money]
+  launched: "<= 2018"
+  source: https://security.opera.com/en/bug-bounty/
+  source_name: Opera
+
+- name: PostNord
+  url: https://www.postnord.com
+  unit: Bring
+  unit_url: https://www.bring.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://vdp.postnord.com/
+  rewards: [hall-of-fame]
+
+- name: Promon
+  url: https://promon.io
+  platform: none
+  visibility: private-known
+  type: bug-bounty
+  program_url: https://trust.promon.io/
+  rewards: [money, hall-of-fame]
+  comment: Belønningsvilkår ikke offentlige. / Reward terms not public.
+
+- name: SAS
+  url: https://www.sas.com
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/sas_legacy
+  rewards: [hall-of-fame]
+  comment: Den norske stat er deleier. / The Norwegian state is a part-owner.
+
+- name: Telenor
+  url: https://www.telenor.com
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/telenor_group
+  rewards: [hall-of-fame]
+
+- name: Telenor
+  url: https://www.telenor.no
+  unit: Telenor Norge
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.telenor.no/.well-known/security.txt
+
+- name: Tidal
+  url: https://tidal.com
+  platform: bugcrowd
+  visibility: public
+  type: bug-bounty
+  program_url: https://bugcrowd.com/engagements/tidal-bugbounty
+  rewards: [money]
+
+- name: TV 2
+  url: https://www.tv2.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://info.tv2.no/info/artikkel/responsible-disclosure-policy
+  rewards: [hall-of-fame]
+
+- name: Vy
+  url: https://www.vy.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.vy.no/en/conditions-and-privacy/vulnerability-disclosure-policy
+  rewards: []
+  comment: Tidligere NSB. / Formerly NSB.
+
+- name: Yara
+  url: https://www.yara.com
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://vdp.yara.com/
+  rewards: [hall-of-fame]
+
+- name: Bane NOR
+  url: https://www.banenor.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.banenor.no/.well-known/security.txt
+
+- name: Forsvaret
+  url: https://www.forsvaret.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.forsvaret.no/.well-known/security.txt
+
+- name: NAV
+  url: https://www.nav.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://nav.no/.well-known/security.txt
+  comment: 'Kontakt: soc@nav.no. / Contact: soc@nav.no.'
+
+- name: Norkart
+  url: https://www.norkart.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://norkart.no/.well-known/security.txt
+
+- name: Sbanken
+  url: https://www.sbanken.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://sbanken.no/.well-known/security.txt
+  comment: Del av DNB, kontakt irt@dnb.no. / Part of DNB, contact irt@dnb.no.
+
+- name: Skatteetaten
+  url: https://www.skatteetaten.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.skatteetaten.no/.well-known/security.txt
+  comment: 'Kontakt: csirt@skatteetaten.no. / Contact: csirt@skatteetaten.no.'
+
+- name: Statkraft
+  url: https://www.statkraft.com
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  program_url: https://www.statkraft.com/about-statkraft/irt/
+  comment: 'IRT-kontakt: csirt@statkraft.com, ingen egen policyside. / IRT contact: csirt@statkraft.com, no dedicated policy page.'
+
+- name: Valgdirektoratet
+  url: https://www.valg.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.valg.no/.well-known/security.txt
+  comment: 'Kontakt: sikkerhet@valg.no. / Contact: sikkerhet@valg.no.'
+
+- platform: intigriti
+  visibility: undisclosed
+  type: bug-bounty
+  rewards: [money]
+  launched: 2023-01
+
+- platform: intigriti
+  visibility: undisclosed
+  type: bug-bounty
+  rewards: [money]
+  launched: 2023-12
+
+- platform: intigriti
+  visibility: undisclosed
+  type: bug-bounty
+  rewards: [money]
+  launched: 2024-01
