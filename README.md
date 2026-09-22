@@ -1,146 +1,178 @@
-# Norske bug bounty- og responsible disclosure-program 🇳🇴
-# Norwegian Bug Bounty &amp; Coordinated Disclosure Programs
+# Norske bug bounty- og responsible disclosure-program 🇳🇴 / Norwegian Bug Bounty & Coordinated Disclosure Programs
 
-> **EN —** A curated list of Norwegian (or Norway-headquartered) organisations that run a bug bounty, vulnerability disclosure program (VDP), responsible disclosure policy (RDP), or that at minimum publish a `security.txt`. Pull requests welcome — see [Contributing](#contributing--bidra).
+En oversikt over norske, eller Norge-baserte, virksomheter med et bug bounty-program, sårbarhetsrapporteringsprogram (VDP), ansvarlig rapporteringspolicy (RDP), eller som minst tar imot rapporter via en `security.txt`.
+
+A curated list of Norwegian, or Norway-based, organizations with a bug bounty program, vulnerability disclosure program (VDP), responsible disclosure policy (RDP), or that at minimum accept reports via a `security.txt`.
+
+Vet du om et program som mangler? Se [Bidra](#bidra--contributing) under, eller rediger [`programs.yaml`](programs.yaml) direkte og send en pull request.
+
+Know of a program that's missing? See [Contributing](#bidra--contributing) below, or edit [`programs.yaml`](programs.yaml) directly and send a pull request.
+
+> ⚠️ **En `security.txt` er ikke en invitasjon til å teste.** Den er en kontaktkanal for å rapportere sårbarheter du har funnet gjennom normal bruk, ikke tillatelse til å skanne, angripe eller aktivt lete etter svakheter. De fleste `security.txt`-oppføringene under (kategorien "kun security.txt / kontakt") har **ingen** formell policy, scope eller trygg-havn-klausul. Har du ikke en publisert bug bounty- eller VDP-avtale som sier at aktiv testing er tillatt, kan uautorisert testing være ulovlig etter straffeloven § 204 og du kan komme i ansvar selv om du rapporterer funnet i god tro.
 >
-> **NO —** En oversikt over norske (eller Norge-baserte) virksomheter som har et bug bounty-program, sårbarhetsrapporterings­program (VDP), ansvarlig rapporterings­policy (RDP), eller som minst publiserer en `security.txt`. Pull requests mottas med takk — se [Bidra](#contributing--bidra).
+> ⚠️ **A `security.txt` is not an invitation to test.** It is a contact channel for reporting vulnerabilities you found through normal use, not permission to scan, attack, or actively probe for weaknesses. Most `security.txt` entries below (the "security.txt / contact only" category) have **no** formal policy, scope, or safe harbor language. Without a published bug bounty or VDP agreement that explicitly authorizes active testing, unauthorized testing can be illegal and you may face liability even if you report the finding in good faith.
 
-**Repo rename / Endring av repo-navn:** This list has outgrown the orginal concept `norske-bug-bounty-program`. Now renaming the repo to **`norwegian-disclosure-programs`** — as it covers bug bounty *and* VDP/RDP *and* `security.txt`-only entries. Old links keep working after a GitHub rename. / Endret navn på repoet til **`norwegian-disclosure-programs`** slik det dekker både bug bounty, VDP/RDP og rene `security.txt`-oppføringer.
+**Repo rename / Endring av repo-navn:** This list has outgrown the original concept `norske-bug-bounty-program`. It has been renamed to **`norwegian-disclosure-programs`**, as it covers bug bounty *and* VDP/RDP *and* `security.txt`-only entries. Old links keep working after a GitHub rename. / Endret navn på repoet til **`norwegian-disclosure-programs`** siden det dekker både bug bounty, VDP/RDP og rene `security.txt`-oppføringer.
 
-Legend / Tegnforklaring: 💰 Cash bounty / Pengebelønning · 👕 Swag · 🏆 Hall of Fame / Takkeliste · 🙏 Thanks only / Kun takk · 🔐 PGP key offered / PGP-nøkkel · 🛡️ Safe harbor language / Trygg-havn-klausul
+<!-- programs:start -->
+**74 aktive program / active programs · 6 offentlige bug bounty-program med pengedusør / public bug bounty programs with a cash reward · sist oppdatert / last updated 2026-09-22**
 
----
+### 💰 Offentlige bug bounty-program / Public bug bounty programs
 
-## A. Formal programs / Formelle program
-
-Organisations with a published bug bounty, VDP or RDP policy page.
-Virksomheter med publisert bug bounty-, VDP- eller RDP-side.
-
-| Company / Virksomhet | Sector / Sektor | Platform / Plattform | Program / Policy | Reward / Belønning | Launched / Lansert | Source / Kilde |
+|Firma / Company|Plattform / program / Platform / program|Dusør / Reward|security.txt|Kommentar / Comment|Lansert / Launched|Kilde / Source|
 |---|---|---|---|---|---|---|
-| [Aftenposten](https://aftenposten.no) (Schibsted) | Media | [HackerOne](https://hackerone.com/aftenposten) / [Bugcrowd](https://bugcrowd.com) (private) | Invite-only via Schibsted | 💰 | ? | [security.txt](https://aftenposten.no/.well-known/security.txt) |
-| [BankID Norge](https://bankid.no) | E-ID / finans | Self-hosted | [security.txt](https://bankid.no/.well-known/security.txt) | 🏆 🔐 | ? | – |
-| [Cognite](https://cognite.com) | Industrial SaaS | Self-hosted | [Vulnerability Disclosure Policy](https://docs.cognite.com/cdf/trust/vulnerability-disclosure-policy) | 🙏 🛡️ | ? | – |
-| [Digdir](https://digdir.no) (Digitaliserings­direktoratet) | Offentlig sektor | Self-hosted | [Responsible Disclosure Policy](https://www.digdir.no/digdir/responsible-disclosure-policy/6386) | 🏆 | ? | – |
-| [Equinor](https://equinor.com) | Energi | Self-hosted (CSIRT) | [CSIRT / responsible disclosure](https://www.equinor.com/about-us/csirt) | 🙏 🔐 | ? | [security.txt](https://www.equinor.com/.well-known/security.txt) |
-| [Euronext Securities Oslo](https://www.euronextvps.no) (tidl. VPS) | Verdipapir / finans | Self-hosted | [Vulnerability Reporting](https://www.euronext.com/en/post-trade/euronext-securities/oslo/about-us/vulnerability-reporting) | 🙏 🔐 | ? | – |
-| [Gjensidige](https://gjensidige.no) | Forsikring | [HackerOne](https://hackerone.com/gjensidige) | VDP (public policy) | 🏆 | ? | – |
-| [Horde](https://horde.no) | IT | Self-hosted | [Responsible Disclosure Program](https://horde.no/responsible-disclosure/) | 🏆 | ? | – |
-| [Infront / Oslo Market Solutions](https://oslomarketsolutions.no) | Finansiell teknologi | Self-hosted | [Responsible Disclosure](https://oslomarketsolutions.no/en/responsibledisclosure/) | 🙏 | ? | – |
-| [Jobreg](https://jobreg.no) | Rekruttering | Self-hosted | [Responsible Disclosure Program](https://www.jobreg.no/security.php) | 🏆 | ? | – |
-| [Kahoot!](https://kahoot.com) | EdTech | [Intigriti](https://intigriti.com) | Privat (ikke hemmelig) | 💰 | ? | [Intigriti](https://intigriti.com/companies) |
-| [Kahoot!](https://kahoot.com) – [Motimate](https://motimateapp.com) | EdTech | [Intigriti](https://intigriti.com) | Privat (ikke hemmelig) | 💰 | ? | [Facebook](https://business.facebook.com/motimateapp/photos/a.1702293843419477/3049907031991478/) |
-| [Kahoot!](https://kahoot.com) – public policy | EdTech | Self-hosted | [disclosure-policy.txt](https://kahoot.com/disclosure-policy.txt) | 🙏 | ? | – |
-| [Kongsberg Gruppen](https://kongsberg.com) | Forsvar / maritim | Self-hosted | `securitytxt@kongsberg.com` via [security.txt](https://www.kongsberg.com/.well-known/security.txt) | 🙏 | ? | – |
-| [Morgenbladet](https://morgenbladet.no) | Media | Self-hosted | [Offentlig program](https://www.morgenbladet.no/kundeservice/) | 💰 | ? | – |
-| [NBIM](https://nbim.no) (Oljefondet) | Finans / offentlig | Self-hosted | [Responsible Disclosure Policy](https://www.nbim.no/en/responsible-disclosure-policy/) | 🏆 | ? | – |
-| [NBX](https://nbx.com) | Krypto / finans | Self-hosted | [Responsible Disclosure Program](https://nbx.com/en/security) | 💰 | ? | – |
-| [Nordea](https://nordea.com) (NO-virksomhet) | Bank | [HackerOne](https://hackerone.com/nordea) | VDP | 🏆 | ? | – |
-| [NorgesGruppen](https://norgesgruppen.no) | Detaljhandel | Self-hosted | [Cybersikkerhet](https://www.norgesgruppen.no/cybersikkerhet/) | 🙏 | ? | – |
-| [Norsk Helsenett (NHN)](https://nhn.no) / [Helsenorge](https://helsenorge.no) | Helse / offentlig | Self-hosted | [Vulnerability Disclosure](https://www.nhn.no/.well-known/vulnerability-disclosure.html) | 🏆 🔐 | ? | – |
-| [Norsk Hydro](https://hydro.com) | Industri / metall | [HackerOne](https://hackerone.com/norskhydroasa) | VDP | 🏆 | etter 2019 | – |
-| [Northern.tech](https://northern.tech) (Mender, CFEngine) | DevOps / IoT | [HackerOne](https://hackerone.com/northerntechhq) | Bug Bounty | 💰 🛡️ | 2021 | – |
-| [NRK](https://nrk.no) | Allmenn­kringkaster | Self-hosted | [Responsible Disclosure Policy](https://info.nrk.no/responsible-disclosure-policy/) | 🏆 | ? | – |
-| [Oda](https://oda.com) | Netthandel / mat | [Intigriti](https://intigriti.com) | [Offentlig](https://app.intigriti.com/researcher/programs/oda/oda) | 💰 | Apr. 2022 | [Medium](https://medium.com/oda-product-tech/oda-is-launching-our-bug-bounty-program-8e356d5ac0d3) |
-| [Opera Software](https://opera.com) | Nettleser | [Bugcrowd](https://bugcrowd.com/opera) | [Bug Bounty Program](https://security.opera.com/en/bug-bounty/) | 💰 (opptil $10K) | 2018 (Android), $10K i 2021 | – |
-| [PostNord / Bring](https://bring.com) | Logistikk / post | Self-hosted | [VDP portal](https://vdp.postnord.com/) | 🏆 | ? | – |
-| [Promon](https://promon.io) | Mobil-sikkerhet | Self-hosted | [Trust Center](https://trust.promon.io/) | 💰 (privat) 🏆 | ? | – |
-| [SAS](https://sas.com) (Norge er deleier) | Luftfart | [HackerOne](https://hackerone.com/sas_legacy) | VDP | 🏆 | ? | – |
-| [Schibsted](https://schibsted.com) | Media / marketplace | [Intigriti](https://intigriti.com) / [Bugcrowd](https://bugcrowd.com) | Privat (ikke hemmelig) | 💰 | Sept. 2022 | – |
-| [Schibsted](https://schibsted.com) – [FINN](https://finn.no) | Marketplace | [Intigriti](https://intigriti.com) | Privat (ikke hemmelig) | 💰 | Sept. 2019 | [Medium](https://medium.com/finn-no/one-year-with-a-private-bug-bounty-program-f928a57ad026) |
-| [Sparebank 1](https://sparebank1.no/) | Bank | [Intigriti](https://intigriti.com) | Privat (ikke hemmelig) | 💰 | Nov. 2021 | [kode24](https://www.kode24.no/artikkel/slik-blir-du-dusorjeger-for-sparebank-1/76160552) |
-| [Storebrand](https://storebrand.no) | Forsikring / pensjon | [Intigriti](https://app.intigriti.com/programs/spp-storebrand/storebrand-rd/detail) | VDP | 🏆 | ? | – |
-| [Telenor Group](https://telenor.com) | Telekom | [HackerOne](https://hackerone.com/telenor_group) | VDP | 🏆 | ? | – |
-| [Telenor Norge](https://telenor.no) | Telekom | Self-hosted | [security.txt](https://www.telenor.no/.well-known/security.txt) (`tsoc@tsoc.telenor.net`) | 🏆 🔐 | ? | – |
-| [Tidal](https://tidal.com) | Musikk-strømming | [Bugcrowd](https://bugcrowd.com/engagements/tidal-bugbounty) / [HackerOne](https://tidal.com/bugreport) | Bug Bounty | 💰 | ? | – |
-| [TV 2](https://tv2.no) | Media | Self-hosted | [Responsible Disclosure Policy](https://info.tv2.no/info/artikkel/responsible-disclosure-policy) | 🏆 | ? | – |
-| [VG](https://vg.no) (Schibsted) | Media | [Bugcrowd](https://bugcrowd.com) (privat) via Schibsted | Invite-only | 💰 | ? | [security.txt](https://www.vg.no/security.txt) |
-| [Vipps MobilePay](https://vipps.no) | Betaling | Self-hosted | [Responsible Disclosure Policy](https://vipps.no/sikkerhet/responsible-disclosure-policy/) | 🏆 | ? | – |
-| [Visma](https://visma.no) | SaaS | [Intigriti](https://intigriti.com) | Privat (ikke hemmelig) | 💰 | ? | [Visma](https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/) |
-| [Visma](https://visma.no) | SaaS | [Intigriti](https://intigriti.com) | [Offentlig](https://app.intigriti.com/researcher/programs/visma/visma) | 💰 | ? | [Visma](https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/) |
-| [Visma](https://visma.no) | SaaS | [Intigriti](https://intigriti.com) | [Vulnerability Disclosure Program](https://app.intigriti.com/researcher/programs/visma/VismaResponsibleDisclosure) | 👕 🏆 | ? | [Visma](https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/) |
-| [Vy](https://vy.no) (tidl. NSB) | Transport / jernbane | Self-hosted | [Vulnerability Disclosure Policy](https://www.vy.no/en/conditions-and-privacy/vulnerability-disclosure-policy) | 🙏 🛡️ | ? | – |
-| [Yara](https://yara.com) | Industri / kjemi | [HackerOne](https://hackerone.com/yara) | [VDP portal](https://vdp.yara.com/) | 🏆 | ? | – |
-| 🤫 | Ukjent | [Intigriti](https://intigriti.com) | Privat | 💰 | Jan. 2023 | – |
-| 🤫 | Ukjent | [Intigriti](https://intigriti.com) | Privat | 💰 | Des. 2023 | – |
+|[Klarna](https://www.klarna.com)|[HackerOne](https://hackerone.com/klarna/policy_scopes)|<span title="Penger / Money">💰</span>|-|Nordisk fintech med virksomhet i Norge. / Nordic fintech with operations in Norway.|?|-|
+|[Morgenbladet](https://morgenbladet.no)|[Eget program / Self-hosted](https://www.morgenbladet.no/kontakt-oss)|<span title="Penger / Money">💰</span>|-|-|?|-|
+|[NBX](https://nbx.com)|[Open Bug Bounty](https://openbugbounty.org/bugbounty/nbxsec/)|<span title="Penger / Money">💰</span> <span title="Hall of Fame">🏆</span>|[security.txt](https://app.nbx.com/.well-known/security.txt)|-|?|[NBX](https://nbx.com/en/security)|
+|[Opera Software](https://www.opera.com)|[Bugcrowd](https://bugcrowd.com/opera)|<span title="Penger / Money">💰</span>|-|-|<= 2018|[Opera](https://security.opera.com/en/bug-bounty/)|
+|[Tidal](https://tidal.com)|[Bugcrowd](https://bugcrowd.com/engagements/tidal-bugbounty)|<span title="Penger / Money">💰</span>|-|-|?|-|
+|[Visma](https://visma.no)|[Intigriti](https://app.intigriti.com/researcher/programs/visma/visma)|<span title="Penger / Money">💰</span>|-|-|?|[Visma](https://www.visma.com/trust-centre/responsible-disclosure)|
+
+### 🔒 Private bug bounty-program / Private bug bounty programs
+
+Private program krever invitasjon fra plattformen eller selskapet, men det er offentlig kjent at de finnes. / Private programs require an invite from the platform or company, but are publicly known to exist.
+
+|Firma / Company|Plattform / program / Platform / program|Dusør / Reward|security.txt|Kommentar / Comment|Lansert / Launched|Kilde / Source|
+|---|---|---|---|---|---|---|
+|[Ardoq](https://ardoq.com)|HackerOne|<span title="Penger / Money">💰</span>|-|-|<= 2022|[Ardoq](https://www.ardoq.com/blog/bug-bounty-hackerone)|
+|[Firi](https://firi.com)|[HackerOne](https://hackerone.com/firi_as)|<span title="Penger / Money">💰</span>|[security.txt](https://firi.com/.well-known/security.txt)|-|Okt. 2024|[Firi](https://firi.com/.well-known/security.txt)|
+|[Kahoot](https://kahoot.com)|Intigriti|<span title="Penger / Money">💰</span>|[security.txt](https://kahoot.com/.well-known/security.txt)|-|?|[Intigriti](https://intigriti.com/companies)|
+|[Kahoot](https://kahoot.com) - [Motimate](https://motimateapp.com)|Intigriti|<span title="Penger / Money">💰</span>|[security.txt](https://motimateapp.com/.well-known/security.txt)|-|?|[Facebook](https://business.facebook.com/motimateapp/photos/a.1702293843419477/3049907031991478/)|
+|[Northern.tech](https://northern.tech)|[HackerOne](https://hackerone.com/northerntechhq)|<span title="Penger / Money">💰</span>|-|-|2021|[Northern.tech](https://northern.tech/blog/)|
+|[Oda](https://oda.com)|YesWeHack|<span title="Penger / Money">💰</span>|[security.txt](https://oda.com/.well-known/security.txt)|-|Apr. 2022|[security.txt](https://oda.com/.well-known/security.txt)|
+|[Promon](https://promon.io)|[Eget program / Self-hosted](https://trust.promon.io/)|<span title="Penger / Money">💰</span> <span title="Hall of Fame">🏆</span>|-|Belønningsvilkår ikke offentlige. / Reward terms not public.|?|-|
+|[Schibsted](https://schibsted.com)|Bugcrowd|<span title="Penger / Money">💰</span>|[security.txt](https://schibsted.com/.well-known/security.txt)|Dekker flere Schibsted-merkevarer, bl.a. Aftenposten og VG. / Covers several Schibsted brands, incl. Aftenposten and VG.|?|[security.txt](https://vg.no/.well-known/security.txt)|
+|[Signicat](https://www.signicat.com)|Intigriti|<span title="Penger / Money">💰</span>|[security.txt](https://www.signicat.com/.well-known/security.txt)|-|?|[Intigriti](https://app.intigriti.com/programs/signicat/signicatresponsibledisclosure/detail)|
+|[Sparebank 1](https://sparebank1.no/)|Intigriti|<span title="Penger / Money">💰</span>|[security.txt](https://www.sparebank1.no/.well-known/security.txt)|-|Nov. 2021|[kode24](https://www.kode24.no/artikkel/slik-blir-du-dusorjeger-for-sparebank-1/76160552)|
+|[Storebrand](https://www.storebrand.no)|Intigriti|<span title="Penger / Money">💰</span>|[security.txt](https://www.storebrand.no/.well-known/security.txt)|-|Feb. 2025|[BankShift](https://www.bankshift.no/teknologi/storebrand-apne-om-angrep-i-egne-systemer-noen-hadde-tatt-over-koden-som-andre-hadde-laget/457471)|
+|[Vend](https://vend.com) - [FINN.no](https://finn.no)|HackerOne|<span title="Penger / Money">💰</span>|[security.txt](https://finn.no/.well-known/security.txt)|Tidligere del av Schibsted/Adevinta, nå eget selskap. / Formerly part of Schibsted/Adevinta, now a separate company.|Sep. 2019|[Medium](https://medium.com/finn-no/one-year-with-a-private-bug-bounty-program-f928a57ad026)|
+|[Visma](https://visma.no)|Intigriti|<span title="Penger / Money">💰</span>|-|-|?|[Visma via Wayback Machine](https://web.archive.org/web/20221203065247/https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/)|
+
+**I tillegg kjenner man til minst 3 norske private programmer hvor selskapet ikke kan oppgis. / In addition, at least 3 private Norwegian programs are known to exist where the company cannot be named.**
+
+### 📨 Responsible disclosure / VDP
+
+|Firma / Company|Plattform / program / Platform / program|Dusør / Reward|security.txt|Kommentar / Comment|Lansert / Launched|Kilde / Source|
+|---|---|---|---|---|---|---|
+|[Bergen kommune](https://www.bergen.kommune.no)|[Eget program / Self-hosted](https://www.bergen.kommune.no/.well-known/security.txt)|-|[security.txt](https://www.bergen.kommune.no/.well-known/security.txt)|Kontakt: itsikkerhet@bergen.kommune.no. Ber om varsel før aktiv testing. / Contact: itsikkerhet@bergen.kommune.no. Asks for advance notice before active testing.|?|-|
+|[Cognite](https://www.cognite.com)|[Eget program / Self-hosted](https://docs.cognite.com/cdf/trust/vulnerability-disclosure-policy)|-|[security.txt](https://www.cognite.com/.well-known/security.txt)|-|?|-|
+|[Danske Bank](https://danskebank.com)|[Eget program / Self-hosted](https://danskebank.com/responsible-disclosure)|-|-|Nordisk konsern, dekker Danske Bank Norge. / Nordic group, covers Danske Bank Norge.|?|-|
+|[Digdir](https://www.digdir.no)|[Eget program / Self-hosted](https://www.digdir.no/digdir/responsible-disclosure-policy/6386)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[Equinor](https://www.equinor.com)|[Eget program / Self-hosted](https://www.equinor.com/about-us/csirt)|-|[security.txt](https://www.equinor.com/.well-known/security.txt)|-|?|-|
+|[Euronext Securities Oslo](https://www.euronextvps.no)|[Eget program / Self-hosted](https://www.euronext.com/en/post-trade/euronext-securities/oslo/about-us/vulnerability-reporting)|-|-|Tidligere Verdipapirsentralen, forkortet VPS. / Formerly Verdipapirsentralen, abbreviated VPS.|?|-|
+|[Gjensidige](https://www.gjensidige.no)|[HackerOne](https://hackerone.com/gjensidige)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[Handelsbanken](https://www.handelsbanken.no)|[HackerOne](https://hackerone.com/handelsbanken)|-|-|Nordisk konsern, dekker Handelsbanken Norge. / Nordic group, covers Handelsbanken Norge.|?|-|
+|[Horde](https://horde.no)|[Eget program / Self-hosted](https://horde.no/responsible-disclosure/)|<span title="Hall of Fame">🏆</span>|[security.txt](https://horde.no/.well-known/security.txt)|-|?|-|
+|[Infront](https://oslomarketsolutions.no) - Oslo Market Solutions|[Eget program / Self-hosted](https://oslomarketsolutions.no/en/responsibledisclosure/)|-|-|-|?|-|
+|[Jobreg](https://jobreg.no)|[Eget program / Self-hosted](https://www.jobreg.no/security.php)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[JustisCERT](https://www.justiscert.no)|[Eget program / Self-hosted](https://www.justiscert.no/rapportering-av-sarbarheter)|-|-|CERT for justissektoren, bl.a. politiet og domstolene. / CERT for the justice sector, incl. police and courts.|?|-|
+|[Kahoot](https://kahoot.com)|[Eget program / Self-hosted](https://kahoot.com/disclosure-policy.txt)|-|[security.txt](https://kahoot.com/.well-known/security.txt)|-|?|-|
+|[KLP](https://www.klp.no)|[Eget program / Self-hosted](https://www.klp.no/om-klp/personvern/slik-sikrer-vi-din-informasjon)|-|-|Kontakt: sikkerhet@klp.no, PGP foretrekkes. / Contact: sikkerhet@klp.no, PGP preferred.|?|-|
+|[NBIM](https://www.nbim.no)|[Eget program / Self-hosted](https://www.nbim.no/en/responsible-disclosure-policy/)|<span title="Hall of Fame">🏆</span>|-|Forvalter Statens pensjonsfond utland, kjent som Oljefondet. / Manages the Government Pension Fund Global, known as the Oil Fund.|?|-|
+|[Nordea](https://www.nordea.com)|[HackerOne](https://hackerone.com/nordea)|<span title="Hall of Fame">🏆</span>|-|Nordisk konsern, dekker også norsk virksomhet. / Nordic group, also covers Norwegian operations.|?|-|
+|[Nordnet](https://www.nordnet.no)|[Eget program / Self-hosted](https://www.nordnet.se/security-disclosure)|-|-|Nordisk plattform, ikke bekreftet Norge-spesifikk side. / Nordic platform, no Norway-specific page confirmed.|?|-|
+|[NorgesGruppen](https://www.norgesgruppen.no)|[Eget program / Self-hosted](https://www.norgesgruppen.no/cybersikkerhet/)|-|-|-|?|-|
+|[Norsk Helsenett](https://www.nhn.no) - [Helsenorge](https://www.helsenorge.no)|[Eget program / Self-hosted](https://www.nhn.no/.well-known/vulnerability-disclosure.html)|<span title="Hall of Fame">🏆</span>|[security.txt](https://www.nhn.no/.well-known/security.txt)|-|?|-|
+|[Norsk Hydro](https://www.hydro.com)|[HackerOne](https://hackerone.com/norskhydroasa)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[NRK](https://nrk.no)|[Eget program / Self-hosted](https://info.nrk.no/responsible-disclosure-policy/)|<span title="Hall of Fame">🏆</span>|[security.txt](https://nrk.no/.well-known/security.txt)|-|?|-|
+|[PostNord](https://www.postnord.com) - [Bring](https://www.bring.no)|[Eget program / Self-hosted](https://vdp.postnord.com/)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[SAS](https://www.sas.com)|[HackerOne](https://hackerone.com/sas_legacy)|<span title="Hall of Fame">🏆</span>|-|Den norske stat er deleier. / The Norwegian state is a part-owner.|?|-|
+|[Signicat](https://www.signicat.com)|[Intigriti](https://app.intigriti.com/programs/signicat/signicatresponsibledisclosure/detail)|<span title="Hall of Fame">🏆</span>|[security.txt](https://www.signicat.com/.well-known/security.txt)|-|?|-|
+|[Storebrand](https://www.storebrand.no)|[Intigriti](https://app.intigriti.com/programs/spp-storebrand/storebrand-rd/detail)|-|[security.txt](https://www.storebrand.no/.well-known/security.txt)|-|Jan. 2026|-|
+|[Sykehuspartner](https://www.sykehuspartner.no)|[Eget program / Self-hosted](https://sykehuspartner.no/sider/Responsible-disclosure-policy.aspx)|-|[security.txt](https://www.sykehuspartner.no/.well-known/security.txt)|Felles helse-IT-drift for Helse Sør-Øst. / Shared health-IT operations for Helse Sør-Øst.|?|-|
+|[Telenor](https://www.telenor.com)|[HackerOne](https://hackerone.com/telenor_group)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[Tryg Forsikring](https://www.tryg.no)|[Eget program / Self-hosted](https://tryg.com/en/responsible-disclosure)|-|[security.txt](https://tryg.dk/.well-known/security.txt)|Nordisk konsern, dekker Tryg Norge. / Nordic group, covers Tryg Norge.|?|-|
+|[TV 2](https://www.tv2.no)|[Eget program / Self-hosted](https://info.tv2.no/info/artikkel/responsible-disclosure-policy)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+|[Universitetet i Oslo](https://www.uio.no)|[Eget program / Self-hosted](https://www.uio.no/english/services/it/security/cert/vulnerability-disclosure-policy.html)|-|-|Drives av UiO-CERT. / Run by UiO-CERT.|?|-|
+|[Vipps](https://vipps.no)|[Eget program / Self-hosted](https://vipps.no/sikkerhet/responsible-disclosure-policy/)|<span title="Hall of Fame">🏆</span>|[security.txt](https://vipps.no/.well-known/security.txt)|-|?|-|
+|[Visma](https://visma.no)|[Intigriti](https://app.intigriti.com/researcher/programs/visma/VismaResponsibleDisclosure)|<span title="Swag">👕</span> <span title="Hall of Fame">🏆</span>|-|-|?|[Visma](https://www.visma.com/trust-centre/responsible-disclosure)|
+|[Vy](https://www.vy.no)|[Eget program / Self-hosted](https://www.vy.no/en/conditions-and-privacy/vulnerability-disclosure-policy)|-|-|Tidligere NSB. / Formerly NSB.|?|-|
+|[Yara](https://www.yara.com)|[Eget program / Self-hosted](https://vdp.yara.com/)|<span title="Hall of Fame">🏆</span>|-|-|?|-|
+
+### 📇 Kun security.txt / kontakt, uten egen policyside / security.txt or contact only, no dedicated policy page
+
+Ingen bug bounty eller formell policyside, men det finnes en kjent kanal for å rapportere sårbarheter. / No bug bounty or formal policy page, but there is a known channel for reporting vulnerabilities.
+
+|Firma / Company|Plattform / program / Platform / program|Dusør / Reward|security.txt|Kommentar / Comment|Lansert / Launched|
+|---|---|---|---|---|---|
+|[Bane NOR](https://www.banenor.no)|Eget program / Self-hosted|-|[security.txt](https://www.banenor.no/.well-known/security.txt)|-|?|
+|[BankID Norge](https://www.bankid.no)|Eget program / Self-hosted|<span title="Hall of Fame">🏆</span>|[security.txt](https://bankid.no/.well-known/security.txt)|Ingen egen policyside funnet, bare security.txt. / No dedicated policy page found, only security.txt.|?|
+|[Forsvaret](https://www.forsvaret.no)|Eget program / Self-hosted|-|[security.txt](https://www.forsvaret.no/.well-known/security.txt)|-|?|
+|[Helse Sør-Øst](https://helse-sorost.no)|Eget program / Self-hosted|-|[security.txt](https://helse-sorost.no/.well-known/security.txt)|Håndteres av Sykehuspartner. / Handled by Sykehuspartner.|?|
+|[Holtålen kommune](https://holtalen.kommune.no)|Eget program / Self-hosted|-|[security.txt](https://holtalen.kommune.no/.well-known/security.txt)|-|?|
+|[Kongsberg Gruppen](https://www.kongsberg.com)|Eget program / Self-hosted|-|[security.txt](https://www.kongsberg.com/.well-known/security.txt)|-|?|
+|[NAV](https://www.nav.no)|Eget program / Self-hosted|-|[security.txt](https://nav.no/.well-known/security.txt)|Kontakt: soc@nav.no. / Contact: soc@nav.no.|?|
+|[Norkart](https://www.norkart.no)|Eget program / Self-hosted|-|[security.txt](https://norkart.no/.well-known/security.txt)|-|?|
+|[Oslo kommune](https://www.oslo.kommune.no)|Eget program / Self-hosted|-|[security.txt](https://www.oslo.kommune.no/.well-known/security.txt)|-|?|
+|[Ringerike kommune](https://www.ringerike.kommune.no)|Eget program / Self-hosted|-|[security.txt](https://www.ringerike.kommune.no/.well-known/security.txt)|-|?|
+|[Sbanken](https://www.sbanken.no)|Eget program / Self-hosted|-|[security.txt](https://sbanken.no/.well-known/security.txt)|Del av DNB, kontakt irt@dnb.no. / Part of DNB, contact irt@dnb.no.|?|
+|[Skatteetaten](https://www.skatteetaten.no)|Eget program / Self-hosted|-|[security.txt](https://www.skatteetaten.no/.well-known/security.txt)|Kontakt: csirt@skatteetaten.no. / Contact: csirt@skatteetaten.no.|?|
+|[Stange kommune](https://www.stange.kommune.no)|Eget program / Self-hosted|-|[security.txt](https://www.stange.kommune.no/.well-known/security.txt)|-|?|
+|[Statens vegvesen](https://www.vegvesen.no)|Eget program / Self-hosted|-|[security.txt](https://www.vegvesen.no/.well-known/security.txt)|-|?|
+|[Statkraft](https://www.statkraft.com)|[Eget program / Self-hosted](https://www.statkraft.com/about-statkraft/irt/)|-|-|IRT-kontakt: csirt@statkraft.com, ingen egen policyside. / IRT contact: csirt@statkraft.com, no dedicated policy page.|?|
+|[Søndre Land kommune](https://www.sondre-land.kommune.no)|Eget program / Self-hosted|-|[security.txt](https://www.sondre-land.kommune.no/.well-known/security.txt)|-|?|
+|[Telenor](https://www.telenor.no) - Telenor Norge|Eget program / Self-hosted|-|[security.txt](https://www.telenor.no/.well-known/security.txt)|-|?|
+|[Valgdirektoratet](https://www.valg.no)|Eget program / Self-hosted|-|[security.txt](https://www.valg.no/.well-known/security.txt)|Kontakt: sikkerhet@valg.no. / Contact: sikkerhet@valg.no.|?|
+
+Dusør / Reward: 💰 penger / money · 🏆 hall of fame · 👕 swag. ⚠️ = usikker status / unknown status · 🔴 = stengt / closed.
+<!-- programs:end -->
+
+Vil du legge til eller endre noe? Rediger [`programs.yaml`](programs.yaml) - tabellene over genereres automatisk fra den filen når du sender en pull request. Se [CONTRIBUTING.md](CONTRIBUTING.md).
+
+Want to add or change something? Edit [`programs.yaml`](programs.yaml) - the tables above are generated automatically from that file when you send a pull request. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## Hall of Fame
+
+Program som offentlig krediterer forskere på en egen side, nyttig om du vil ha anerkjennelse i tillegg til, eller i stedet for, penger.
+
+Programs that publicly credit researchers on a dedicated page, useful if you want recognition in addition to, or instead of, cash.
+
+- [NBIM](https://www.nbim.no/en/responsible-disclosure-policy/) - Oljefondet / the Oil Fund
+- [NRK](https://info.nrk.no/responsible-disclosure-policy/)
+- [Vipps MobilePay](https://vipps.no/sikkerhet/responsible-disclosure-policy/)
+- [Horde](https://horde.no/responsible-disclosure/)
+- [Jobreg](https://www.jobreg.no/security.php)
+- [Visma](https://app.intigriti.com/researcher/programs/visma/VismaResponsibleDisclosure)
+- [TV 2](https://info.tv2.no/info/artikkel/responsible-disclosure-policy)
+- [Norsk Helsenett / Helsenorge](https://www.nhn.no/.well-known/vulnerability-disclosure.html)
+- [Digdir](https://www.digdir.no/digdir/responsible-disclosure-policy/6386)
+- [Gjensidige](https://hackerone.com/gjensidige)
+- [NBX](https://openbugbounty.org/bugbounty/nbxsec/)
+
+## Bidra / Contributing
+
+Denne listen driftes av fellesskapet. Slik hjelper du til:
+
+This list is community-maintained. Here's how to help:
+
+1. Rediger [`programs.yaml`](programs.yaml). **Ikke** rediger tabellene i `README.md` direkte - de genereres automatisk når endringen havner på `main`.
+   Edit [`programs.yaml`](programs.yaml). **Do not** edit the tables in `README.md` directly - they are generated automatically once the change lands on `main`.
+2. Send en pull request. Feltbeskrivelser står øverst i `programs.yaml`, og en fyldigere guide finnes i [CONTRIBUTING.md](CONTRIBUTING.md).
+   Send a pull request. Field descriptions are at the top of `programs.yaml`, and a fuller guide is in [CONTRIBUTING.md](CONTRIBUTING.md).
+3. En sjekk kjører automatisk på pull requesten og sier fra hvis noe mangler eller har feil verdi.
+   A check runs automatically on the pull request and flags anything missing or invalid.
+
+Har du ikke lyst til å lage en pull request selv? [Opprett et issue](../../issues/new) med en lenke til programmet, så tar noen seg av resten.
+
+Don't want to open a pull request yourself? [Open an issue](../../issues/new) with a link to the program, and someone will take it from there.
+
+Hva hører hjemme i listen: programmer hos norske selskap eller norske datterselskap/merkevarer av utenlandske selskap; både betalte bug bounty-program og gratis responsible/vulnerability disclosure-program; private program bare når eksistensen er offentlig kjent og du kan oppgi en kilde (er programmet hemmelig, utelat `name` og sett `visibility: undisclosed`); og virksomheter som i det minste svarer på rapporter via en publisert `security.txt`.
+
+What belongs in the list: programs run by Norwegian companies, or by Norwegian subsidiaries/brands of foreign companies; both paid bug bounty programs and free responsible/vulnerability disclosure programs; private programs only when their existence is publicly known and you can cite a source (if the program is secret, omit `name` and set `visibility: undisclosed`); and organizations that at least respond to reports via a published `security.txt`.
+
+Kjenner du en norsk virksomhet som burde hatt et program, men ikke har det? Ikke legg dem til her - oppfordre dem heller til å publisere en `security.txt` etter [RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116), det er det enkleste stedet å starte.
+
+Know a Norwegian organization that should have a program but doesn't? Don't add them here - encourage them to publish a `security.txt` per [RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116) instead, it's the easiest place to start.
+
+## Ressurser / Resources
+
+- **[securitytxt.no](https://web.archive.org/web/20260517123123/https://securitytxt.no/)** (arkivert / archived) - Tidligere oversikt over `security.txt`-bruk i norsk offentlig sektor. Siden er nå nede, lenken går til siste kjente arkiverte versjon. Sjekk gjerne selv om en virksomhet har lagt til en `security.txt` senere.
+  Former adoption tracker for `security.txt` in Norwegian public sector. The site is now down, the link goes to the last known archived version. It's worth checking directly whether an organization has added a `security.txt` since.
+- **[kode24 - Dusørjegerne](https://www.kode24.no/tag/dus%C3%B8rjegerne)** - Intervjuserie med norske dusørjegere. / Interview series with Norwegian bug bounty hunters.
+- **[RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116)** - Standarden for `security.txt`. / The `security.txt` standard.
+- **[disclose.io](https://disclose.io/)** - Åpent prosjekt om trygg-havn-klausuler og VDP-praksis. / Open project on safe harbor language and VDP best practice.
+- **[NSM](https://nsm.no/)** - Nasjonal sikkerhetsmyndighet. / The Norwegian National Security Authority.
 
 ---
 
-## B. `security.txt`-only / Uformell rapporterings­kanal
-
-Organisations that accept reports via `security.txt` (RFC 9116) or a security mailbox, without a polished policy page. Many of these are Norwegian public-sector entities indexed by **[securitytxt.no](https://securitytxt.no/)** (an adoption tracker for Norwegian public sector, maintained by [Kovert](https://kovert.no)).
-
-Virksomheter som tar imot rapporter via `security.txt` (RFC 9116) eller en sikkerhets-postkasse, uten en egen policyside. Mange er offentlig sektor og indekseres på **[securitytxt.no](https://securitytxt.no/)** (drevet av [Kovert](https://kovert.no)).
-
-| Organisation / Virksomhet | Sector / Sektor | `security.txt` | Contact / Kontakt |
-|---|---|---|---|
-| [Bane NOR](https://banenor.no) | Jernbane­infrastruktur | [security.txt](https://www.banenor.no/.well-known/security.txt) | – |
-| [Forsvaret](https://forsvaret.no) | Forsvar | [security.txt](https://www.forsvaret.no/.well-known/security.txt) | per RFC 2142 |
-| [NAV](https://nav.no) | Offentlig / velferd | [security.txt](https://nav.no/.well-known/security.txt) | `soc@nav.no` |
-| [Norkart](https://norkart.no) | Geodata / eiendom | [security.txt](https://norkart.no/.well-known/security.txt) | – |
-| [NRK Super](https://nrksuper.no) | Media (NRK-merke) | [security.txt](https://nrksuper.no/.well-known/security.txt) | `operativ.it-sikkerhet@nrk.no` |
-| [NRK P3](https://p3.no) | Media (NRK-merke) | [security.txt](https://p3.no/.well-known/security.txt) | `operativ.it-sikkerhet@nrk.no` |
-| [Sbanken](https://sbanken.no) (del av DNB) | Bank | [security.txt](https://sbanken.no/.well-known/security.txt) | `irt@dnb.no` |
-| [Skatteetaten](https://skatteetaten.no) | Skatteetaten | [security.txt](https://www.skatteetaten.no/.well-known/security.txt) | `csirt@skatteetaten.no` 🔐 |
-| [Statkraft](https://statkraft.com) | Energi / kraftselskap | [CSIRT/IRT](https://www.statkraft.com/about-statkraft/irt/) | `csirt@statkraft.com` |
-| [Valgdirektoratet](https://valg.no) | Offentlig / valg | [security.txt](https://www.valg.no/.well-known/security.txt) | `sikkerhet@valg.no` |
-
-> For the full and continually-updated list of Norwegian public-sector entities publishing `security.txt`, see **[securitytxt.no](https://securitytxt.no/)**. Help us merge entries from there into this list — see Contributing below.
->
-> For en oppdatert oversikt over offentlige norske virksomheter med `security.txt`, se **[securitytxt.no](https://securitytxt.no/)**. Hjelp gjerne med å løfte oppføringer derfra inn i denne lista — se Bidra under.
-
----
-
-## Hall of Fame / Takkeliste
-
-Programs that publicly credit researchers (a "hall of fame" / "acknowledgements" page) — useful if you want public recognition rather than (or in addition to) cash.
-
-Program som offentlig krediterer forskere — nyttig om du vil ha offentlig anerkjennelse i stedet for (eller i tillegg til) penger.
-
-- [NBIM](https://www.nbim.no/en/responsible-disclosure-policy/) — Acknowledgements on the policy page.
-- [NRK](https://info.nrk.no/responsible-disclosure-policy/) — Hall of fame on the policy page.
-- [Vipps MobilePay](https://vipps.no/sikkerhet/responsible-disclosure-policy/) — Hall of fame.
-- [Horde](https://horde.no/responsible-disclosure/) — Hall of fame.
-- [Jobreg](https://www.jobreg.no/security.php) — Hall of fame.
-- [Visma](https://www.visma.com/trust-centre/security/vasp-vcdm/operations/bug-bounty-and-responsible-disclosure/) — Hall of fame (Intigriti VDP scope).
-- [TV 2](https://info.tv2.no/info/artikkel/responsible-disclosure-policy) — Hall of fame.
-- [BankID Norge](https://bankid.no/.well-known/security.txt) — Public acknowledgement on request.
-- [Norsk Helsenett / Helsenorge](https://www.nhn.no/.well-known/vulnerability-disclosure.html) — Acknowledgements.
-- [Digdir](https://www.digdir.no/digdir/responsible-disclosure-policy/6386) — Acknowledgements.
-
----
-
-## Contributing / Bidra
-
-**EN —** This list is community-maintained. Help keep it complete and accurate:
-
-- **Add a program** — open a PR adding a row to the right table (A or B), or open an issue with the link.
-- **Found a dead link / wrong reward / outdated info?** — open a PR.
-- **Run a program yourself?** — submit your own entry; please link to the published policy page.
-- **Know a Norwegian org that should run a program but doesn't?** — that's fine, but please don't add them to this list until they publish something. Encourage them to publish a `security.txt` per [RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116) — it's the lowest-friction way to start.
-
-Please keep entries alphabetical within each table, include a working policy URL, and mark the reward type with the legend icons at the top.
-
-**NO —** Denne lista driftes av miljøet. Hjelp oss å holde den komplett og korrekt:
-
-- **Legg til et program** — åpne en PR med en ny rad i riktig tabell (A eller B), eller opprett en issue med lenken.
-- **Døde lenker / feil belønnings­type / utdatert info?** — åpne en PR.
-- **Drifter du et program selv?** — send inn din egen oppføring; lenk til den publiserte policysiden.
-- **Kjenner du en norsk virksomhet som *burde* hatt et program, men ikke har det?** — ikke legg dem til her før de publiserer noe. Oppfordre dem heller til å publisere `security.txt` etter [RFC 9116](https://datatracker.ietf.org/doc/html/rfc9116) — det er det enkleste startpunktet.
-
-Hold oppføringene alfabetisk innenfor hver tabell, lenk til en fungerende policy-URL, og merk belønnings­typen med ikonene fra tegnforklaringen øverst.
-
----
-
-## Resources / Ressurser
-
-- **[securitytxt.no](https://securitytxt.no/)** — Adoption tracker for `security.txt` in Norwegian public sector (Kovert).
-- **[kode24 – Dusørjegerne](https://www.kode24.no/emne/dus%C3%B8rjegerne)** — Norwegian bug-bounty interview series.
-- **[RFC 9116 — A File Format to Aid in Security Vulnerability Disclosure](https://datatracker.ietf.org/doc/html/rfc9116)** — The `security.txt` spec.
-- **[disclose.io](https://disclose.io/)** — Open project on safe-harbor language and VDP best practices.
-- **[ENISA — Coordinated Vulnerability Disclosure policies in the EU](https://www.enisa.europa.eu/publications/coordinated-vulnerability-disclosure-policies-in-the-eu)** — Background reading on CVD.
-- **[NSM — Nasjonal sikkerhetsmyndighet](https://nsm.no/)** — Norwegian National Security Authority.
-
----
-
-*Last meaningful update: 2026-05. / Sist oppdatert: 2026-05.*
+*Se [`programs.yaml`](programs.yaml) for kilde-dataen og [CONTRIBUTING.md](CONTRIBUTING.md) for en fullstendig bidragsguide. / See [`programs.yaml`](programs.yaml) for the source data and [CONTRIBUTING.md](CONTRIBUTING.md) for a full contribution guide.*
