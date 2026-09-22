@@ -12,8 +12,10 @@ Know of a program that's missing? See [Contributing](#bidra--contributing) below
 >
 > ⚠️ **A `security.txt` is not an invitation to test.** It is a contact channel for reporting vulnerabilities you found through normal use, not permission to scan, attack, or actively probe for weaknesses. Most `security.txt` entries below (the "security.txt / contact only" category) have **no** formal policy, scope, or safe harbor language. Without a published bug bounty or VDP agreement that explicitly authorizes active testing, unauthorized testing can be illegal and you may face liability even if you report the finding in good faith.
 
+**Repo rename / Endring av repo-navn:** This list has outgrown the original concept `norske-bug-bounty-program`. It has been renamed to **`norwegian-disclosure-programs`**, as it covers bug bounty *and* VDP/RDP *and* `security.txt`-only entries. Old links keep working after a GitHub rename. / Endret navn på repoet til **`norwegian-disclosure-programs`** siden det dekker både bug bounty, VDP/RDP og rene `security.txt`-oppføringer.
+
 <!-- programs:start -->
-**74 aktive program / active programs · 6 offentlige bug bounty-program med pengedusør / public bug bounty programs with a cash reward · sist oppdatert / last updated 2026-09-21**
+**74 aktive program / active programs · 6 offentlige bug bounty-program med pengedusør / public bug bounty programs with a cash reward · sist oppdatert / last updated 2026-09-22**
 
 ### 💰 Offentlige bug bounty-program / Public bug bounty programs
 
