@@ -538,6 +538,156 @@
   security_txt: https://www.valg.no/.well-known/security.txt
   comment: 'Kontakt: sikkerhet@valg.no. / Contact: sikkerhet@valg.no.'
 
+- name: Bergen kommune
+  url: https://www.bergen.kommune.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.bergen.kommune.no/.well-known/security.txt
+  rewards: []
+  security_txt: https://www.bergen.kommune.no/.well-known/security.txt
+  comment: 'Kontakt: itsikkerhet@bergen.kommune.no. Ber om varsel før aktiv testing. / Contact: itsikkerhet@bergen.kommune.no. Asks for advance notice before active testing.'
+
+- name: Danske Bank
+  url: https://danskebank.com
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://danskebank.com/responsible-disclosure
+  rewards: []
+  comment: Nordisk konsern, dekker Danske Bank Norge. / Nordic group, covers Danske Bank Norge.
+
+- name: Handelsbanken
+  url: https://www.handelsbanken.no
+  platform: hackerone
+  visibility: public
+  type: vdp
+  program_url: https://hackerone.com/handelsbanken
+  rewards: []
+  comment: Nordisk konsern, dekker Handelsbanken Norge. / Nordic group, covers Handelsbanken Norge.
+
+- name: Helse Sør-Øst
+  url: https://helse-sorost.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://helse-sorost.no/.well-known/security.txt
+  comment: Håndteres av Sykehuspartner. / Handled by Sykehuspartner.
+
+- name: Holtålen kommune
+  url: https://holtalen.kommune.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://holtalen.kommune.no/.well-known/security.txt
+
+- name: JustisCERT
+  url: https://www.justiscert.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.justiscert.no/rapportering-av-sarbarheter
+  rewards: []
+  comment: CERT for justissektoren, bl.a. politiet og domstolene. / CERT for the justice sector, incl. police and courts.
+
+- name: Klarna
+  url: https://www.klarna.com
+  platform: hackerone
+  visibility: public
+  type: bug-bounty
+  program_url: https://hackerone.com/klarna/policy_scopes
+  rewards: [money]
+  comment: Nordisk fintech med virksomhet i Norge. / Nordic fintech with operations in Norway.
+
+- name: KLP
+  url: https://www.klp.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.klp.no/om-klp/personvern/slik-sikrer-vi-din-informasjon
+  rewards: []
+  comment: 'Kontakt: sikkerhet@klp.no, PGP foretrekkes. / Contact: sikkerhet@klp.no, PGP preferred.'
+
+- name: Nordnet
+  url: https://www.nordnet.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.nordnet.se/security-disclosure
+  rewards: []
+  comment: Nordisk plattform, ikke bekreftet Norge-spesifikk side. / Nordic platform, no Norway-specific page confirmed.
+
+- name: Oslo kommune
+  url: https://www.oslo.kommune.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.oslo.kommune.no/.well-known/security.txt
+
+- name: Ringerike kommune
+  url: https://www.ringerike.kommune.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.ringerike.kommune.no/.well-known/security.txt
+
+- name: Statens vegvesen
+  url: https://www.vegvesen.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.vegvesen.no/.well-known/security.txt
+
+- name: Stange kommune
+  url: https://www.stange.kommune.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.stange.kommune.no/.well-known/security.txt
+
+- name: Søndre Land kommune
+  url: https://www.sondre-land.kommune.no
+  platform: none
+  visibility: public
+  type: contact-only
+  rewards: []
+  security_txt: https://www.sondre-land.kommune.no/.well-known/security.txt
+
+- name: Sykehuspartner
+  url: https://www.sykehuspartner.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://sykehuspartner.no/sider/Responsible-disclosure-policy.aspx
+  rewards: []
+  security_txt: https://www.sykehuspartner.no/.well-known/security.txt
+  comment: Felles helse-IT-drift for Helse Sør-Øst. / Shared health-IT operations for Helse Sør-Øst.
+
+- name: Tryg Forsikring
+  url: https://www.tryg.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://tryg.com/en/responsible-disclosure
+  rewards: []
+  security_txt: https://tryg.dk/.well-known/security.txt
+  comment: Nordisk konsern, dekker Tryg Norge. / Nordic group, covers Tryg Norge.
+
+- name: Universitetet i Oslo
+  url: https://www.uio.no
+  platform: none
+  visibility: public
+  type: rdp
+  program_url: https://www.uio.no/english/services/it/security/cert/vulnerability-disclosure-policy.html
+  rewards: []
+  comment: Drives av UiO-CERT. / Run by UiO-CERT.
+
 - platform: intigriti
   visibility: undisclosed
   type: bug-bounty
